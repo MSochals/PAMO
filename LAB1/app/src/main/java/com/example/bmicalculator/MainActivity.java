@@ -11,6 +11,7 @@ import android.widget.Button; // for a button
 public class MainActivity extends AppCompatActivity {
 
     private TextView resultTextView;
+    private TextView rangeTextView;
     private Button calculateButton;
 
     @Override
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         // get references to programmatically manipulated TextView and Button
         resultTextView = (TextView) findViewById(R.id.resultTextView);
+        rangeTextView = (TextView) findViewById(R.id.rangeTextView);
         calculateButton = (Button) findViewById(R.id.calculateButton);
 
         // get references from EditText
@@ -57,13 +59,39 @@ public class MainActivity extends AppCompatActivity {
                     results = results + bmi;
 
                     resultTextView.setText(results);
+                    classificationBMI(bmi);
                 }
-
                 // if the EditText poles are empty or equals "0"
                 else{
                     resultTextView.setText("");
+                    rangeTextView.setText("");
                 }
             }
         });
+    }
+
+    // set the range of calculated BMI
+    private void classificationBMI(float bmi) {
+        String bmiRange = "";
+
+        // below 18.5 - underweight range
+        if (Float.compare(bmi, (float) 18.5) < 0) {
+            bmiRange = getString(R.string.underweight_range);
+        }
+        // between 18.5 and 24.9 - normal range
+        else if (Float.compare(bmi, (float) 18.5) >= 0 && Float.compare(bmi, (float) 25) <0) {
+            bmiRange = getString(R.string.normal_range);
+        }
+        // between 25 and 29.9 - overweight range
+        else if (Float.compare(bmi, (float) 25) >= 0 && Float.compare(bmi, (float) 30) <0) {
+            bmiRange = getString(R.string.overweight_range);
+        }
+        // 30 and above - obese range
+        else {
+            bmiRange = getString(R.string.obese_range);
+        }
+
+        bmiRange = "You're in the " + bmiRange + " range";
+        rangeTextView.setText(bmiRange);
     }
 }

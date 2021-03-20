@@ -76,7 +76,7 @@
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="310dp"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:layout_marginStart="51dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="50dp"
@@ -88,5 +88,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calculateButton" />
+
+    <TextView
+        android:id="@+id/rangeTextView"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="@string/bmi"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

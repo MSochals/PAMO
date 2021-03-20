@@ -4,4 +4,8 @@
     <string name="height">Height [cm]</string>
     <string name="bmi"></string>
     <string name="calculate">Calculate</string>
+    <string name="underweight_range">underweight</string>
+    <string name="normal_range">normal</string>
+    <string name="overweight_range">overweight</string>
+    <string name="obese_range">obese</string>
 </resources>
