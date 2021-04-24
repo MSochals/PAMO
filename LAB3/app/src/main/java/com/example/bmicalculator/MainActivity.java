@@ -23,4 +23,9 @@ public class MainActivity extends AppCompatActivity {
         Intent quiz = new Intent(this, QuizActivity.class);
         startActivity(quiz);
     }
+
+    public void GraphScreen(View view) {
+        Intent quiz = new Intent(this, GraphActivity.class);
+        startActivity(quiz);
+    }
 }

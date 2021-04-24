@@ -10,7 +10,9 @@
     <string name="normal_range">normal</string>
     <string name="overweight_range">overweight</string>
     <string name="obese_range">obese</string>
-    <string name="next">Next</string>
+    <string name="next">Calculate BMI</string>
     <string name="quiz">COVID-19 Quiz</string>
-    <string name="main_text">Calculate your BMI</string>
+    <string name="graph">COVID-19 Graph</string>
+    <string name="main_text">BMI and COVID-19 App</string>
+    <string name="graph_covid">Covid-19 new cases in first 2021 months (1-January, 2-February, 3-March)</string>
 </resources>
