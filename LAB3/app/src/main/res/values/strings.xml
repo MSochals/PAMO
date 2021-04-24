@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="weight">Weight [kg]</string>
+    <string name="height">Height [cm]</string>
+    <string name="sex">Sex [w, m]</string>
+    <string name="age">Age</string>
+    <string name="bmi"></string>
+    <string name="calculate">Calculate</string>
+    <string name="underweight_range">underweight</string>
+    <string name="normal_range">normal</string>
+    <string name="overweight_range">overweight</string>
+    <string name="obese_range">obese</string>
+    <string name="next">Next</string>
+    <string name="quiz">COVID-19 Quiz</string>
+    <string name="main_text">Calculate your BMI</string>
+</resources>
